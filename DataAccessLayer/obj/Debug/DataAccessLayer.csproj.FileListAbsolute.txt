@@ -1,0 +1,6 @@
+F:\C#\finalterm\winforms\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+F:\C#\finalterm\winforms\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+F:\C#\finalterm\winforms\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+F:\C#\finalterm\winforms\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+F:\C#\finalterm\winforms\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+F:\C#\finalterm\winforms\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
