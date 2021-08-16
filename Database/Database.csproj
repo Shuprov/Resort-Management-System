@@ -70,6 +70,12 @@
     <Compile Include="Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roominfo.cs">
@@ -77,6 +83,30 @@
     </Compile>
     <Compile Include="Roominfo.Designer.cs">
       <DependentUpon>Roominfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userfood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userfood.Designer.cs">
+      <DependentUpon>Userfood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userhome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userhome.Designer.cs">
+      <DependentUpon>Userhome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userupdateprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userupdateprofile.Designer.cs">
+      <DependentUpon>Userupdateprofile.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Dininginfo.resx">
       <DependentUpon>Dininginfo.cs</DependentUpon>
@@ -90,6 +120,9 @@
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -101,6 +134,18 @@
     </Compile>
     <EmbeddedResource Include="Roominfo.resx">
       <DependentUpon>Roominfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userfood.resx">
+      <DependentUpon>Userfood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userhome.resx">
+      <DependentUpon>Userhome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userupdateprofile.resx">
+      <DependentUpon>Userupdateprofile.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

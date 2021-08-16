@@ -45,10 +45,16 @@
     <Compile Include="Entities\EDining.cs" />
     <Compile Include="Entities\EEmployee.cs" />
     <Compile Include="Entities\ERoom.cs" />
+    <Compile Include="Entities\ESignup.cs" />
+    <Compile Include="Entities\EUserprofileupdate.cs" />
     <Compile Include="Operations\OCustomer.cs" />
     <Compile Include="Operations\ODining.cs" />
     <Compile Include="Operations\OEmployee.cs" />
     <Compile Include="Operations\ORoom.cs" />
+    <Compile Include="Operations\OSignup.cs" />
+    <Compile Include="Operations\OUserfood.cs" />
+    <Compile Include="Operations\OUserhome.cs" />
+    <Compile Include="Operations\OUserviewprofile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
