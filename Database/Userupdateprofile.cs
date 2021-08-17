@@ -32,21 +32,28 @@ namespace Database
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            EUserprofileupdate eUserprofileupdate = new EUserprofileupdate();
-            OUserviewprofile oUserviewprofile = new OUserviewprofile();
-            eUserprofileupdate.Name = txtName.Text;
-            eUserprofileupdate.Email = txtEmail.Text;
-            eUserprofileupdate.Password = txtPassword.Text;
-            eUserprofileupdate.Phone = txtPhone.Text;
-            
-            int flag = oUserviewprofile.Update(eUserprofileupdate);
-            if (flag > 0)
+            if (txtName.Text != "" && txtEmail.Text != "" && txtPassword.Text != "" && txtPhone.Text != "")
             {
-                MessageBox.Show("Updated successfully");
+                EUserprofileupdate eUserprofileupdate = new EUserprofileupdate();
+                OUserviewprofile oUserviewprofile = new OUserviewprofile();
+                eUserprofileupdate.Name = txtName.Text;
+                eUserprofileupdate.Email = txtEmail.Text;
+                eUserprofileupdate.Password = txtPassword.Text;
+                eUserprofileupdate.Phone = txtPhone.Text;
+
+                int flag = oUserviewprofile.Update(eUserprofileupdate);
+                if (flag > 0)
+                {
+                    MessageBox.Show("Updated successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Not Updated");
+                }
             }
             else
             {
-                MessageBox.Show("Not Updated");
+                MessageBox.Show("Please fill the box", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -66,6 +73,46 @@ namespace Database
         {
             new Login().Show();
             this.Hide();
+        }
+
+        private void txtName_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Enter only alphabet";
+        }
+
+        private void txtName_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void txtEmail_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Characters must be lowercase and contain @";
+        }
+
+        private void txtEmail_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void txtPassword_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Password must be minimum 8 characters";
+        }
+
+        private void txtPassword_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void txtPhone_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Enter value provided during signup.Phone number can not be updated";
+        }
+
+        private void txtPhone_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
         }
     }
 }

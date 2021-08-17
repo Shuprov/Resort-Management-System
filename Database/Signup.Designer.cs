@@ -41,6 +41,9 @@ namespace Database
             this.btnSignup = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -95,6 +98,8 @@ namespace Database
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(124, 20);
             this.txtName.TabIndex = 1;
+            this.txtName.MouseLeave += new System.EventHandler(this.txtName_MouseLeave);
+            this.txtName.MouseHover += new System.EventHandler(this.txtName_MouseHover);
             // 
             // txtEmail
             // 
@@ -102,6 +107,8 @@ namespace Database
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(124, 20);
             this.txtEmail.TabIndex = 1;
+            this.txtEmail.MouseLeave += new System.EventHandler(this.txtEmail_MouseLeave);
+            this.txtEmail.MouseHover += new System.EventHandler(this.txtEmail_MouseHover);
             // 
             // txtPassword
             // 
@@ -110,6 +117,8 @@ namespace Database
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(124, 20);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.MouseLeave += new System.EventHandler(this.txtPassword_MouseLeave);
+            this.txtPassword.MouseHover += new System.EventHandler(this.txtPassword_MouseHover);
             // 
             // txtPhone
             // 
@@ -117,6 +126,8 @@ namespace Database
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(124, 20);
             this.txtPhone.TabIndex = 1;
+            this.txtPhone.MouseLeave += new System.EventHandler(this.txtPhone_MouseLeave);
+            this.txtPhone.MouseHover += new System.EventHandler(this.txtPhone_MouseHover);
             // 
             // btnSignup
             // 
@@ -148,11 +159,28 @@ namespace Database
             this.linkLabel1.Text = "Login";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 368);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(458, 22);
+            this.statusStrip1.TabIndex = 4;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            // 
             // Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(458, 390);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.txtPhone);
@@ -166,7 +194,10 @@ namespace Database
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.label1);
             this.Name = "Signup";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Signup";
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,5 +217,7 @@ namespace Database
         private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

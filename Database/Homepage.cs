@@ -50,5 +50,11 @@ namespace Database
             new Dininginfo().Show();
             this.Hide();
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Login().Show();
+            this.Hide();
+        }
     }
 }

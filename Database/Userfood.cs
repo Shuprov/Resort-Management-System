@@ -45,5 +45,15 @@ namespace Database
             new Userupdateprofile().Show();
             this.Hide();
         }
+
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Click to view food menu";
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
     }
 }

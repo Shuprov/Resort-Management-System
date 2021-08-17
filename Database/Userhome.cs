@@ -46,5 +46,15 @@ namespace Database
             new Userupdateprofile().Show();
             this.Hide();
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Click to view available rooms";
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
     }
 }

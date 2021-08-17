@@ -114,5 +114,51 @@ namespace Database
             new Employeeinfo().Show();
             this.Hide();
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Login().Show();
+            this.Hide();
+        }
+
+        private void btnShow_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Click to view room data";
+        }
+
+        private void btnShow_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void btnInsert_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Click to insert room data";
+        }
+
+        private void btnInsert_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void btnUpdate_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Click to update room data";
+        }
+
+        private void btnUpdate_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void btnDelete_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Click to delete room data";
+        }
+
+        private void btnDelete_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
     }
 }
